@@ -20,7 +20,7 @@ angular.module('tmh.dynamicLocale', []).config(['$provide', function ($provide) 
 .provider('tmhDynamicLocale', ['tmhDynamicLocale.STORAGE_KEY', function(STORAGE_KEY) {
 
   var defaultLocale,
-    localeLocationPattern = 'angular/i18n/angular-locale_{{locale}}.js',
+    localeLocationPattern = '/angular/i18n/angular-locale_{{locale}}.js',
     storageFactory = 'tmhDynamicLocaleStorageCache',
     storage,
     storageKey = STORAGE_KEY,
